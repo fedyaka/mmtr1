@@ -29,12 +29,6 @@ public class Dictionary<K, V> {
         return returnValue;
     }
 
-
-    public V removeWord(K key){
-        V returnValue = dictionary.remove(key);
-        return returnValue;
-    }
-
     public V deleteByKey(K key){
         if (dictionary.containsKey(key)){
             V returnValue = dictionary.remove(key);
